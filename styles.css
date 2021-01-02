@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    text-align: center;
+}
+
+/* Flex items */
+
+.main {
+    text-align: left;
+}
+
+.learn-more {
+    background-color: #F17949;
+}
+
+.join-today {
+    background-color: #FAB131;
+}
+
+.info {
+    background-color: #A9A19E;
+}
+
+.about {
+    background-color: #FAB131;
+}
+
+.how-it-works {
+
+}
+
+/* Cards */
+.card {
+
+}
+
+.hiw-card {
+
+}
+
+.hiw-card > .number {
+    float: left;
+}
+
+#1 {
+    background-color: #C7DDEA;
+}
+
+#3 {
+    background-color: #EBEBEB;
+}
+
+#5 {
+    background-color: #F17949;
+}
+
+/* Images */
+
+.family-img {
+    max-height: 50vh;
+    max-width: 50vw;
+    float: right;
+}
+
+/* Nav bar */
+.nav {
+    display: none;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #777574;
+    padding: 50px;
+}
+
