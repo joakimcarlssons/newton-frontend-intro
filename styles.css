@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre:wght@700&display=swap');
+
+html {
+    font-size: 10px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 1rem;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin: 1rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -7,54 +39,127 @@
     text-align: center;
 }
 
+.highlight-text {
+    color: #ffffff;
+}
+
+.cta-btn {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: .8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: .9rem 2.5rem;
+    border: none;
+    border-radius: 2.5rem;
+    margin: 7% 1rem;
+}
+
 /* Flex items */
 
 .main {
+    background-color: #C7DDEA;
     text-align: left;
 }
 
 .learn-more {
     background-color: #F17949;
+    padding: 25% 22%;
+}
+
+.learn-more h5 {
+    font-size: .8rem;
 }
 
 .join-today {
     background-color: #FAB131;
+    padding: 25%;
+}
+
+.join-today h5 {
+    font-size: .8rem;
 }
 
 .info {
     background-color: #A9A19E;
+    text-align: left;
 }
 
 .about {
     background-color: #FAB131;
 }
 
-.how-it-works {
-
+.about p {
+    margin: 0 3rem 3rem 3rem;
 }
 
 /* Cards */
+
 .card {
-
+    margin: 25% 5% 15% 5%;
+    background-color: #ffffff;
+    padding: 0 0 10% 0;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.hiw-card {
-
+.card img {
+    height: 15rem;
+    width: 10rem;
+    object-fit: cover;
+    margin-top: -10%;
+    padding: 0 23%;
+    border-radius: 0.5rem;
 }
 
-.hiw-card > .number {
-    float: left;
-}
-
-#1 {
+.child-img {
+    object-position: -10% -10%;
     background-color: #C7DDEA;
 }
 
-#3 {
+.adult-img {
+    object-position: -10% -5%;
+    background-color: #FAB131;
+}
+
+.old-img {
+    object-position: -10% -50%;
+    background-color: #F17949;
+}
+
+.card p {
+    margin: 0 3rem;
+}
+
+.hiw-card {
+    padding: 15%;
+}
+
+.hiw-card > .number {
+    margin: -15%;
+    text-align: left;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.4rem;
+    color: #A1A1A1;
+}
+
+.hiw-card > h4 {
+    margin-top: 15%;
+    font-size: 1.2rem;
+}
+
+#first {
+    background-color: #C7DDEA;
+}
+
+#third {
     background-color: #EBEBEB;
 }
 
-#5 {
+#fifth {
     background-color: #F17949;
 }
 
