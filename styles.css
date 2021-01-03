@@ -2,8 +2,10 @@
 
 html {
     font-size: 10px;
+}
+
+body {
     margin: 0;
-    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -30,6 +32,40 @@ p {
     line-height: 1.2rem;
 }
 
+label {
+    margin: .5rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    color: #ffffff;
+}
+
+input {
+    margin: .5rem 0 .7rem 0;
+    border: none;
+    border-radius: .2rem;
+    padding: .5rem;
+    width: 95%;
+}
+
+textarea {
+    margin: .5rem 0 .7rem 0;
+    border: none;
+    border-radius: .2rem;
+    padding: .5rem;
+    width: 95%;
+    min-height: 11rem;
+}
+
+textarea::placeholder {
+    color: #000000;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding-top: .5rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -37,13 +73,14 @@ p {
 
 .item {
     text-align: center;
+    margin: 0;
 }
 
 .highlight-text {
     color: #ffffff;
 }
 
-.cta-btn {
+.btn {
     background-color: #ffffff;
     color: #000000;
     font-family: 'Fira Sans', sans-serif;
@@ -54,6 +91,9 @@ p {
     padding: .9rem 2.5rem;
     border: none;
     border-radius: 2.5rem;
+}
+
+.cta-btn {
     margin: 7% 1rem;
 }
 
@@ -93,6 +133,34 @@ p {
 
 .about p {
     margin: 0 3rem 3rem 3rem;
+}
+
+.contact-form-container {
+    text-align: left;
+    background-color:#A1A1A1;
+    padding-bottom: 10rem;
+    margin-bottom: -10%;
+}
+
+.contact-form {
+    margin: 1rem;
+}
+
+.submit-btn {
+    float: right;
+    margin: 2rem 2.5%;
+    width: 50%;
+}
+
+.come-visit {
+    text-align: left;
+    background-color: #FAB131;
+    padding: 10%;
+}
+
+.map {
+    background-color: #1e1e1e;
+    padding-bottom: 10rem;
 }
 
 /* Cards */
