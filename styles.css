@@ -6,9 +6,10 @@ html {
 
 body {
     margin: 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h5 {
     margin: 1rem;
     font-family: 'Frank Ruhl Libre', serif;
 }
@@ -27,14 +28,18 @@ h5 {
 
 p {
     margin: 1rem;
-    font-family: 'Fira Sans', sans-serif;
     font-size: .9rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
 }
 
 label {
     margin: .5rem;
-    font-family: 'Fira Sans', sans-serif;
     font-size: 1.1rem;
     line-height: 1.2rem;
     color: #ffffff;
@@ -104,6 +109,15 @@ textarea::placeholder {
     text-align: left;
 }
 
+.main p {
+    width: 70%;
+    margin-left: 1.3rem;
+}
+
+.main img {
+    margin-right: 1rem;
+}
+
 .learn-more {
     background-color: #F17949;
     padding: 25% 22%;
@@ -111,6 +125,11 @@ textarea::placeholder {
 
 .learn-more h5 {
     font-size: .8rem;
+}
+
+.learn-more h2,
+.join-today h2 {
+    font-size: 2.1rem;
 }
 
 .join-today {
@@ -166,25 +185,27 @@ textarea::placeholder {
 /* Cards */
 
 .card {
-    margin: 25% 5% 15% 5%;
+    height: 18rem;
+    width: 18rem;
+    margin: 15% 10% 15% 10%;
     background-color: #ffffff;
-    padding: 0 0 10% 0;
+    padding: 0 0 15% 0;
     text-align: center;
     border-radius: 0.5rem;
     box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card img {
-    height: 15rem;
-    width: 10rem;
+    height: 8rem;
+    width: 5rem;
     object-fit: cover;
     margin-top: -10%;
-    padding: 0 23%;
-    border-radius: 0.5rem;
+    padding: 5% 32% 0 32%;
+    border-radius: 0.3rem;
 }
 
 .child-img {
-    object-position: -10% -10%;
+    object-position: -10% -5%;
     background-color: #C7DDEA;
 }
 
@@ -199,7 +220,9 @@ textarea::placeholder {
 }
 
 .card p {
-    margin: 0 3rem;
+    font-size: .8rem;
+    margin: 0 .35rem;
+    padding: 0 1rem;
 }
 
 .hiw-card {
@@ -215,12 +238,18 @@ textarea::placeholder {
 }
 
 .hiw-card > h4 {
-    margin-top: 15%;
+    margin-top: 25%;
     font-size: 1.2rem;
 }
 
 #first {
     background-color: #C7DDEA;
+}
+
+#first p {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.7rem;
+    line-height: 2.4rem;
 }
 
 #third {
@@ -229,6 +258,10 @@ textarea::placeholder {
 
 #fifth {
     background-color: #F17949;
+}
+
+#fifth .number {
+    color:rgba(0, 0, 0, 0.4)
 }
 
 /* Images */
@@ -246,8 +279,24 @@ textarea::placeholder {
 
 /* Footer */
 
+.back-to-top {
+    text-align: center;
+    background-color: #A9A19E;
+    padding: 1rem 0 2.5rem 0;
+}
+
+.back-to-top a {
+    font-size: 1.2rem;
+}
+
+.up-arr {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+}
+
 .footer {
     background-color: #777574;
     padding: 50px;
+    margin-top: -1rem;
 }
 
