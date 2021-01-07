@@ -89,7 +89,7 @@ h5 {
 }
 
 .cta-btn {
-    max-width: 9rem;
+    width: 9rem;
 }
 
 .btn:hover,
@@ -377,31 +377,133 @@ footer {
     font-size: 1.1rem;
 }
 
-nav {
-    background: var(--verylight-grey-color);
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    list-style-type: none;
 }
 
-nav ul {
+nav li {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
-    list-style-type: none;
-    margin: 0 10%;
+    padding: 15%;
+}
+
+nav li.active {
+    background: var(--verylight-grey-color);
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+nav li.active a {
+    color: var(--black-color);
+    font-weight: 600;
 }
 
 nav a {
     color: var(--grey-color);
 }
 
-nav a.active {
-    color: var(--black-color);
-    font-weight: 600;
-}
-
 nav a:hover {
     text-decoration: underline;
 }
+
+
+.header-hero {
+    background: var(--light-blue-color);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.header-hero h1 {
+    align-self: center;
+    font-size: 2.8rem;
+}
+
+.header-hero img {
+    max-height: 40vh;
+    max-width: 40vw;
+    align-self: flex-end;
+    object-fit: cover;
+    object-position: -50% - 10%;
+}
+
+.contact-main {
+    height: 130vh;
+}
+
+.contact-form {
+    width: 100%;
+    background: var(--grey-color);
+    height: 60%;
+}
+
+.map {
+    width: 100%;
+    background: var(--black-color);
+    height: 60%;
+}
+
+.contact-card-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+}
+
+.contact-card {
+    background: var(--yellow-color);
+    padding: 3rem;
+    color: var(--white-color);
+}
+
+.form-container {
+    padding: 2rem;
+}
+
+.form-container h1 {
+    font-size: 4rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .submit-btn {
+    align-self: flex-end;
+    margin-top: 3rem;
+}
+
+.contact-form label {
+    margin: .5rem 1rem; 
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+.contact-form .form-input-field {
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+.contact-form textarea {
+    border: none;
+    border-radius: .5rem;
+}
+
+.contact-form textarea::placeholder {
+    padding: 1rem;
+    font-family: var(--main-font);
+    color: var(--black-color);
+}
+
 
 /* Media Queries */
 
@@ -410,13 +512,26 @@ nav a:hover {
         display: none;
     }
 
-    nav {
+    .index-nav {
         display: none;
+    }
+
+    .contact-footer {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .contact-main {
+        height: 120vh;
+    }
+
+    .contact-card {
+        padding: 5rem;
     }
 }
 
 @media screen and (min-width: 600px) {
-
     .grid-1-2 {
 
         display: grid;
@@ -543,6 +658,73 @@ nav a:hover {
 
 footer {
     flex-direction: column;
+}
+
+nav {
+    background: var(--verylight-grey-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    list-style-type: none;
+    margin: 0 10%;
+}
+
+nav li {
+    padding: 0;
+}
+
+.header-hero {
+    background: var(--light-blue-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.header-hero img {
+    max-height: 30vh;
+    max-width: 30vw;
+    align-self: flex-end;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-container > h1 {
+    padding: 15% 0 0 5%;
+}
+
+.form-container > form {
+    padding: 15% 10% 0 0;
+}
+
+.contact-main {
+    height: 100vh;
+}
+
+.contact-form {
+    width: 100%;
+    background: var(--grey-color);
+    height: 60%;
+}
+
+.contact-form textarea {
+    padding-bottom: 25%;
+}
+
+.map {
+    width: 100%;
+    background: var(--black-color);
+    height: 60%;
+}
+
+.header-hero h1 {
+    font-size: 5rem;
 }
 
 } /* End min-width 600px */
