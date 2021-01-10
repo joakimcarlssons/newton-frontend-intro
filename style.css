@@ -86,6 +86,7 @@ h5 {
     padding: .9rem 2.5rem;
     border: none;
     border-radius: 2.5rem;
+    transition: background .5s;
 }
 
 .cta-btn {
@@ -404,6 +405,7 @@ nav li.active a {
 
 nav a {
     color: var(--grey-color);
+    transition: text-decoration .5s;
 }
 
 nav a:hover {
@@ -496,12 +498,17 @@ nav a:hover {
 .contact-form textarea {
     border: none;
     border-radius: .5rem;
-}
-
-.contact-form textarea::placeholder {
     padding: 1rem;
     font-family: var(--main-font);
     color: var(--black-color);
+}
+
+.back-up a:hover, i:hover {
+    color: var(--verylight-grey-color);
+}
+
+.back-up i {
+    animation: up 2s infinite;
 }
 
 
@@ -728,3 +735,18 @@ nav li {
 }
 
 } /* End min-width 600px */
+
+/* Animations */
+
+@keyframes up {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+}
